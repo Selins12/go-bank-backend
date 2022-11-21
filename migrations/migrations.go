@@ -30,7 +30,8 @@ func Migrate() {
 	Account := &interfaces.Account{}
 	Transactions := &interfaces.Transaction{}
 	database.DB.AutoMigrate(&User, &Account, &Transactions)
-	
+
 	createAccounts()
 }
+
 // Delete Migrate transactions
